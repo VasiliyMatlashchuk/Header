@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <div class="text">
+    <h1>Sticky Navbar on Scroll Using <br> Vanilla JavaScript</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, explicabo ad pariatur porro ducimus voluptas saepe iste repellat tempora esse in quae laboriosam est id deleniti reprehenderit, suscipit eveniet odit. Similique ad repellendus magni voluptatem porro molestiae beatae incidunt eaque architecto illum officiis nesciunt, temporibus mollitia tenetur adipisci commodi id.</p>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function(){
+            let header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
